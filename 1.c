@@ -1,14 +1,17 @@
 #include<stdio.h>
 int main() {
-    int n,x,y,z ;
+    int n,x,y,z,i,j,l ;
     scanf("%d %d",&x,&y) ;
-    z = x%10 ;
-    x = x/10 ;
-    if(z+y>=10){
-        x+=1 ;
+    for(i=x+1;n!=1;i++){
+        for(j=i;j>0;j/=10){
+                l = j%10 ;
+                if(l==y){
+                    n=1 ;
+                    break ;
+                }
+        }
+
     }
-    x = x*10 ;
-    x = x+y ;
-    printf("%d",x) ;
+    printf("%d",i-1) ;
     return 0 ;
 }
