@@ -23,8 +23,4 @@ int main(){
           printf("%d ",i+1) ;
         }
     }
-
-
-
-
 }
